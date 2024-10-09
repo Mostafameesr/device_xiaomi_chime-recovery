@@ -17,7 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="chime"
+FDEVICE="sweet"
 #set -o xtrace
 
 fox_get_target_device() {
@@ -37,7 +37,7 @@ fi
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
    	export TW_DEFAULT_LANGUAGE="en"
 	export LC_ALL="C"
-        export TARGET_DEVICE_ALT="citrus, lime, lemon, pomelo, juice, chime"
+        export TARGET_DEVICE_ALT="sweet, sweetin"
  	export ALLOW_MISSING_DEPENDENCIES=true
 	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
 	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
@@ -78,7 +78,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 	# R12.1 Settings
 	export FOX_VERSION="R12.1_8"
-	export OF_MAINTAINER="itsHanibee"
+	export OF_MAINTAINER="mostafameesr"
 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
